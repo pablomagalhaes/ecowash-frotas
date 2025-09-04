@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #f6f8f7;
+}
+body{
+  @apply text-slate-900 bg-[--bg];
+  background-image: radial-gradient(1200px 500px at 10% -200px, #d9fbe5 0%, transparent 60%), radial-gradient(900px 400px at 110% -150px, #e6fff3 0%, transparent 60%);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+.container-wrap{ @apply max-w-[1200px] mx-auto px-5; }
+.card{ @apply bg-white border border-[#E5ECE9] rounded-2xl shadow-soft; }
+.pill{ @apply inline-flex items-center gap-2 px-3 py-1 border rounded-full text-green-800 bg-green-50 border-green-200 font-semibold; }
+.btn{ @apply inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-bold border; }
+.btn-primary{ @apply bg-brand text-white border-transparent; }
+.btn-ghost{ @apply bg-white text-green-700 border-green-200 hover:border-green-400; }
+.badge{ @apply inline-flex items-center gap-2 px-2.5 py-1 border rounded-full text-green-800 bg-green-50 border-green-200; }
+.section{ @apply py-16; }
+.section-head{ @apply flex items-end justify-between gap-5 mb-4; }
+.grid-3{ @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3; }
+.grid-4{ @apply grid gap-4 md:grid-cols-2 lg:grid-cols-4; }
