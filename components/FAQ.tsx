@@ -1,3 +1,4 @@
+import { FaWhatsapp } from "react-icons/fa";
 export default function FAQ(){
   const items = [
     ['Vocês atendem fora do horário comercial?','Sim. Atuamos 24/7 com janelas programadas para não impactar a operação.'],
@@ -21,9 +22,16 @@ export default function FAQ(){
           <aside className="card p-4">
             <h3 className="text-lg font-semibold">Fale com um especialista</h3>
             <p className="text-slate-600">Tire dúvidas sobre escopo, frequências e indicadores de SLA.</p>
-            <div className="flex gap-2 mt-2">
-              <a className="btn btn-primary" href="#contato">Solicitar contato</a>
-              <a className="btn btn-ghost" href="#contato">Enviar e‑mail</a>
+            <div className="flex gap-2 mt-5">
+              {/* <a className="btn btn-primary" href="#contato">Solicitar contato</a>
+              <a className="btn btn-ghost" href="#contato">Enviar e‑mail</a> */}
+              <a 
+                className="btn btn-primary" 
+                href="https://wa.me/5522998122344?text=Olá%2C%20gostaria%20de%20agendar%20uma%20apresentação" 
+                target="_blank"
+              >
+                <FaWhatsapp size={20} /> Agende uma apresentação
+              </a>
             </div>
           </aside>
         </div>

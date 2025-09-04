@@ -1,5 +1,7 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer(){
   const [msg,setMsg] = useState('');
@@ -12,8 +14,9 @@ export default function Footer(){
       <div className="container-wrap grid gap-5 py-6 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-extrabold mb-2">
-            <span className="w-9 h-9 rounded-lg bg-[conic-gradient(from_180deg,#16a34a,#22c55e,#10b981,#16a34a)] shadow-soft"></span>
-            EcoWash Frotas
+            {/* <span className="w-9 h-9 rounded-lg bg-[conic-gradient(from_180deg,#16a34a,#22c55e,#10b981,#16a34a)] shadow-soft"></span>
+            EcoWash Frotas */}
+            <Image src="/ecowash-frotas-logo2.png" width={200} height={100} alt="Frota de veículos EcoWash" className="w-full h-auto" priority />
           </div>
           <p className="text-slate-700">Limpeza inteligente e ecológica de frotas corporativas.<br/>Atendimento sob demanda ou por contrato.</p>
         </div>
@@ -34,12 +37,19 @@ export default function Footer(){
           </ul>
         </nav>
         <div>
-          <h4 className="font-semibold">Contato</h4>
-          <form className="mt-2 flex gap-2" onSubmit={onSubmit}>
+          <h4 className="font-semibold">Fale Conosco</h4>
+          {/* <form className="mt-2 flex gap-2" onSubmit={onSubmit}>
             <input required type="email" className="border rounded-xl px-3 py-2 flex-1" placeholder="Seu e‑mail" />
             <button className="btn btn-primary" type="submit">Enviar</button>
           </form>
-          <p className="text-green-700 mt-2">{msg}</p>
+          <p className="text-green-700 mt-2">{msg}</p> */}
+           <a 
+                className="btn btn-primary mt-4" 
+                href="https://wa.me/5522998122344?text=Olá%2C%20gostaria%20de%20agendar%20uma%20apresentação" 
+                target="_blank"
+              >
+                <FaWhatsapp size={20} /> Whatsapp
+              </a>
         </div>
       </div>
       <div className="container-wrap text-sm text-slate-600 py-3 border-t border-[#E5ECE9]">© {new Date().getFullYear()} EcoWash Frotas. Todos os direitos reservados.</div>

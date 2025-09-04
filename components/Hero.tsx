@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function Hero(){
   return (
@@ -16,10 +18,17 @@ export default function Hero(){
           <p className="text-sm text-green-700 mt-2">*Exemplo comparando lavagem tradicional de ~200L com nosso processo (~20L). Valores podem variar por categoria.</p>
           <div className="flex gap-3 mt-3">
             <a className="btn btn-ghost" href="#simulador">Simular economia</a>
-            <a className="btn btn-primary" href="#contato">Solicitar proposta</a>
+            {/* <a className="btn btn-primary" href="#contato">Agende uma apresentação</a> */}
+            <a 
+              className="btn btn-primary" 
+              href="https://wa.me/5522998122344?text=Olá%2C%20gostaria%20de%20agendar%20uma%20apresentação" 
+              target="_blank"
+            >
+              <FaWhatsapp size={20} /> Agende uma apresentação
+            </a>
           </div>
         </div>
-        <div className="card overflow-hidden">
+        <div className="overflow-hidden">
           <Image src="/frota.png" width={1200} height={700} alt="Frota de veículos EcoWash" className="w-full h-auto" priority />
         </div>
       </div>
