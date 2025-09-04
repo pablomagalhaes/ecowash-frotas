@@ -1,6 +1,11 @@
 export const metadata = {
   title: 'EcoWash Frotas — Limpeza inteligente e ecológica',
   description: 'Lavagem ecológica e inteligente para frotas corporativas. Economia de água, operação in loco e padrão de qualidade.',
+ icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 import './globals.css';
 
