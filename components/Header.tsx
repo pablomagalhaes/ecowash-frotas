@@ -22,7 +22,14 @@ export default function Header(){
         </nav>
         <div className="flex items-center gap-2">
           <button className="btn btn-ghost md:hidden" onClick={()=>setOpen(!open)} aria-expanded={open}>Menu</button>
-          <a className="btn btn-primary hidden md:inline-flex" href="#contato">Solicitar proposta</a>
+          {/* <a className="btn btn-primary hidden md:inline-flex" href="#contato">Solicitar proposta</a> */}
+          <a 
+            className="btn btn-primary hidden md:inline-flex" 
+            href="https://wa.me/5522998122344?text=Olá%2C%20gostaria%20de%20agendar%20uma%20apresentação" 
+            target="_blank"
+          >
+            Solicitar proposta
+          </a>
         </div>
       </div>
       {open && (
